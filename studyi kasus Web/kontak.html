@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontak | BukuKita</title>
+  <style>
+    body { background:#d3d3d3; font-family:Georgia; margin:0; padding:20px; }
+    nav a { text-decoration: underline; color: blue; margin: 0 5px; }
+    hr { border:none; border-top:1px solid #555; margin:15px 0; }
+    label { display:block; margin:8px 0 4px; }
+    input, textarea { width:300px; padding:6px; border:1px solid #777; background:#eee; }
+    textarea { height:100px; resize:vertical; }
+    button { margin-top:10px; padding:6px 10px; border:1px solid #555; background:#ccc; cursor:pointer; }
+  </style>
+</head>
+<body>
+  <h1>Kontak Kami</h1>
+  <nav>
+    [ <a href="index.html">Beranda</a> ] 
+    [ <a href="katalog.html">Katalog</a> ] 
+    [ <a href="promo.html">Promo</a> ] 
+    [ <a href="tentang.html">Tentang Kami</a> ] 
+    [ <a href="kontak.html">Kontak</a> ]
+  </nav>
+  <hr>
+
+  <form onsubmit="event.preventDefault(); alert('Pesan terkirim (contoh saja).');">
+    <label for="nama">Nama Lengkap:</label>
+    <input type="text" id="nama" name="nama" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+      <label for="nomor telepon">nomor telepon:</label>
+    <input type="nomor" id="nomor" name="nomor telepon "required>
+
+
+ <label for="pesan">Pesan:</label>
+    <textarea id="pesan" name="pesan" required></textarea>
+
+    <button type="submit">Kirim Pesan</button>
+  </form>
+</body>
+</html>
